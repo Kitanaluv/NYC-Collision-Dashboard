@@ -1,7 +1,5 @@
 # New York-Transportation-Analysis-Dashboard
 
-### https://app.powerbi.com/groups/me/reports/9231a540-5782-4e9a-8c5c-ff0d4caa7453/d1a55a886c19b9d67bd9?experience=power-bi
-
 ## Problem Statement
 
 The rise in pedestrian fatalities in New York City has highlighted the need for a data-driven approach to improve safety at high-risk intersections. The NYC Department of Transportation (DOT) aims to address this issue by analyzing collision data to identify intersections with a high frequency of pedestrian collisions. The analysis will focus on factors such as speeding, distracted driving, and inadequate infrastructure. 
@@ -36,7 +34,7 @@ The goal is to develop recommendations for targeted interventions, including tra
    - Collision Pattern over Time
  
 - Step 8 : In the report view, under the view tab, theme was selected.
- - Step 9: We conducted EDA on our dataset
+ - Step 9: Conducted EDA on the dataset
     - Line chart displaying the distribution of collisions across the years, we also enabled drill down features so that the user can be able to track by month or week. 
    - A bar chart displaying collision disrtibution by Borough.
 
@@ -52,7 +50,7 @@ Following DAX expression was written for the same;
 - Step 11: After creating the measures, three card visuals were added to the canvas, each displaying:
 ![Screenshot (105)](https://github.com/user-attachments/assets/9843eb26-08d5-4ea3-8139-19e480e85333)
 
-- Step 12: We created an overall risk score by combining several key factors, including collision frequency, pedestrian involvement, severity ratio, and contributing risk factors. Each factor was measured and weighted to reflect its importance in determining the overall risk at each intersection. This comprehensive risk score allowed us to systematically evaluate and rank intersections, helping to identify the most high-risk areas. 
+- Step 12: Created an overall risk score by combining several key factors, including collision frequency, pedestrian involvement, severity ratio, and contributing risk factors. Each factor was measured and weighted to reflect its importance in determining the overall risk at each intersection. This comprehensive risk score allowed us to systematically evaluate and rank intersections, helping to identify the most high-risk areas. 
 
 
 
@@ -67,7 +65,7 @@ Following DAX expression was written for the same;
       Overall Risk ScoreS =(0.4 * [Collision Frequencies]) + (0.3 * [Severity Ratios]) +(0.2 * 
       [Pedestrian Involvement Normalized]) + (0.1 * [Contributing Risk Measure])
 
-- Step 13: We created a new table from the existing NYC_Collisions after having identifiedthe high risk intersections.    
+- Step 13: Created a new table from the existing NYC_Collisions after having identifiedthe high risk intersections.    
 
       HIghRiskIntersections = TOPN(20, NYC_Collisions, [Overall Risk ScoreS], DESC)
 
@@ -166,3 +164,5 @@ Introduce variable speed limits during peak hours.
 Install speed cameras at dangerous intersections to enforce limits and reduce speeding.
 
 These recommendations aim to reduce collisions by improving infrastructure, adjusting traffic flow, and enhancing enforcement at high-risk intersections.
+
+- You can access the `.pbix` file for this project [here](https://drive.google.com/file/d/1G-x8bHHvGozZjFWMDOvcLpOh_D8lV716/view?usp=sharing).
