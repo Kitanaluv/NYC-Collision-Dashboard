@@ -1,5 +1,7 @@
 # New York-Transportation-Analysis-Dashboard
-
+## Important Note:
+Due to GitHub's file size limitations, the Power BI .pbix file exceeds the 25MB upload limit. 
+Download the Power BI report file by clicking [here](https://drive.google.com/file/d/1G-x8bHHvGozZjFWMDOvcLpOh_D8lV716/view?usp=sharing-link). Once opened, click the "Download" button (the down arrow in the top-right) to save the file.
 ## Problem Statement
 
 The rise in pedestrian fatalities in New York City has highlighted the need for a data-driven approach to improve safety at high-risk intersections. The NYC Department of Transportation (DOT) aims to address this issue by analyzing collision data to identify intersections with a high frequency of pedestrian collisions. The analysis will focus on factors such as speeding, distracted driving, and inadequate infrastructure. 
